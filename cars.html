@@ -18,7 +18,7 @@
 	<div class="car-grid">
 		<article class="card">
 			<figure>
-				<img src="images/audi-quattro.svg" alt="Audi Sport Quattro illustration">
+				<img src="images/audi-quattro.svg" data-large="images/audi-quattro-large.svg" alt="Audi Sport Quattro illustration">
 				<figcaption><h3>Audi Sport Quattro</h3></figcaption>
 			</figure>
 			<p>The Group B icon: short wheelbase, brutal turbocharged power and a lightweight shell made the Sport Quattro a terrifyingly fast car on loose and twisty stages. Its quattro all-wheel drive changed rally performance forever.</p>
@@ -30,7 +30,7 @@
 
 		<article class="card">
 			<figure>
-				<img src="images/subaru-impreza.svg" alt="Subaru Impreza illustration">
+				<img src="images/subaru-impreza.svg" data-large="images/subaru-impreza-large.svg" alt="Subaru Impreza illustration">
 				<figcaption><h3>Subaru Impreza 1990s–2000s</h3></figcaption>
 			</figure>
 			<p>Synonymous with Subaru's rally legacy: boxer engine, symmetrical AWD, and iconic blue-and-gold livery. The Impreza delivered consistency and traction that dominated loose gravel and snowy events.</p>
@@ -42,7 +42,7 @@
 
 		<article class="card">
 			<figure>
-				<img src="images/toyota-gr-yaris.svg" alt="Toyota GR Yaris illustration">
+				<img src="images/toyota-gr-yaris.svg" data-large="images/toyota-gr-yaris-large.svg" alt="Toyota GR Yaris illustration">
 				<figcaption><h3>Toyota GR Yaris</h3></figcaption>
 			</figure>
 			<p>A modern pocket rocket built with rally DNA: compact, light, and featuring advanced chassis and engine tech. The GR Yaris demonstrates how homologation specials bring rally tech to road cars.</p>
@@ -53,5 +53,28 @@
 		</article>
 	</div>
 </section>
+<!-- shared lightbox overlay -->
+<div id="lightbox-overlay" class="lightbox-overlay" aria-hidden="true">
+	<button class="lightbox-close" aria-label="Close">×</button>
+	<img src="" alt=""/>
+</div>
+<script src="script.js"></script>
+
+	<!-- Related posts & CTA -->
+	<section class="related-wrap">
+		<div class="related">
+			<h3>Related Posts</h3>
+			<ul>
+				<li><a href="index.html">WRC Exhibit — Overview</a></li>
+				<li><a href="stages.html">How Surfaces Shape Setup & Strategy</a></li>
+				<li><a href="cars.html">Group B Legends: Audi Sport Quattro</a></li>
+			</ul>
+		</div>
+		<div class="cta-block">
+			<h4>Want more cars?</h4>
+			<p>Explore detailed car breakdowns and historic rally stories.</p>
+			<a class="cta" href="cars.html" data-analytics="cta-browse-all-cars">Browse All Cars</a>
+		</div>
+	</section>
 </body>
 </html>

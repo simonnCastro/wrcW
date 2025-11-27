@@ -19,8 +19,48 @@
 		</figure>
 		<h2>Welcome to the WRC Exhibit</h2>
 		<p>Explore stages, iconic cars, and the stories that turned drivers into legends. Learn how surfaces, setup and strategy shape every stage.</p>
-		<a class="cta" href="stages.html">Explore Stages</a>
+		<a class="cta" href="stages.html" data-analytics="cta-explore-stages">Explore Stages</a>
 	</div>
+	<!-- lightbox overlay (shared) -->
+	<div id="lightbox-overlay" class="lightbox-overlay" aria-hidden="true">
+		<button class="lightbox-close" aria-label="Close">×</button>
+		<img src="" alt=""/>
+	</div>
+	<script src="script.js"></script>
 </section>
+
+	<!-- Featured & Popular Posts -->
+	<section class="content-highlight">
+		<div class="featured">
+			<h2>Featured Posts</h2>
+			<div class="featured-grid">
+				<article class="feature-card">
+					<a href="cars.html" data-analytics="feature-toyota-gr-yaris">
+						<img src="images/toyota-gr-yaris.svg" alt="Toyota GR Yaris thumbnail">
+						<h3>Toyota GR Yaris — Rally DNA on the Road</h3>
+					</a>
+					<p class="kicker">Featured</p>
+				</article>
+
+				<article class="feature-card">
+					<a href="stages.html" data-analytics="feature-surface-strategy">
+						<img src="images/tarmac.svg" alt="Tarmac thumbnail">
+						<h3>How Surface Changes Strategy — Tarmac, Gravel, Snow</h3>
+					</a>
+					<p class="kicker">In-depth</p>
+				</article>
+			</div>
+		</div>
+
+		<aside class="popular">
+			<h3>Popular Posts</h3>
+			<ol class="popular-list">
+				<li><a href="cars.html" data-analytics="popular-top-cars">Top Rally Cars of the Modern Era</a></li>
+				<li><a href="stages.html#tarmac" data-analytics="popular-tarmac-guide">Tarmac: Setup & Techniques</a></li>
+				<li><a href="cars.html" data-analytics="popular-audi-quattro">Group B Legends: Audi Sport Quattro</a></li>
+			</ol>
+			<a class="cta small" href="cars.html" data-analytics="cta-see-all-cars">See all cars</a>
+		</aside>
+	</section>
 </body>
 </html>

@@ -19,6 +19,25 @@ nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
 	.card { width:260px; }
 }
 
+/* Featured & Popular layout */
+.content-highlight { display:flex; gap:24px; padding:30px 20px; align-items:flex-start; max-width:1100px; margin:0 auto; }
+.featured { flex:2; }
+.featured-grid { display:flex; gap:16px; flex-wrap:wrap; }
+.feature-card { background:#122135; padding:14px; border-radius:10px; width:260px; text-align:left; }
+.feature-card img { width:100%; height:120px; object-fit:cover; border-radius:8px; display:block; }
+.feature-card h3 { margin:10px 0 6px; color:#fff; font-size:16px; }
+.feature-card .kicker { color:#e07a5f; margin-top:6px; font-weight:700; }
+.popular { flex:1; background:#122135; padding:16px; border-radius:10px; }
+.popular-list { padding-left:18px; }
+.popular-list li { margin:10px 0; }
+.popular .cta.small { display:inline-block; margin-top:12px; padding:8px 12px; }
+
+.related-wrap { display:flex; gap:20px; max-width:1100px; margin:30px auto; padding:0 20px; }
+.related { flex:1; background:#122135; padding:16px; border-radius:10px; }
+.related ul { padding-left:18px; }
+.cta-block { flex:1; background:#1b263b; padding:16px; border-radius:10px; text-align:center; }
+.cta-block .cta { margin-top:12px; }
+
 /* Stage-specific tweaks */
 .stage-grid { flex-wrap:wrap; }
 .stage-grid .card { width:260px; }
@@ -28,3 +47,25 @@ nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
 .hero-inner { max-width:1000px; margin:0 auto; padding:40px 20px; }
 .hero-inner figure { margin:0 0 20px; }
 .hero-inner img { width:100%; height:auto; border-radius:8px; display:block; }
+
+/* Lightbox overlay */
+.lightbox-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; visibility:hidden; opacity:0; transition:opacity .2s ease; z-index:9999; }
+.lightbox-overlay.open { visibility:visible; opacity:1; }
+.lightbox-overlay img { max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.6); }
+.lightbox-close { position:fixed; top:20px; right:20px; background:#ffffff22; border:0; color:white; font-size:28px; padding:8px 12px; border-radius:6px; cursor:pointer; }
+.lightbox-close:hover { background:#ffffff33; }
+
+/* Hover, animation and accessibility tweaks */
+.card, .feature-card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover, .feature-card:hover { transform: translateY(-6px) scale(1.02); box-shadow:0 12px 30px rgba(0,0,0,0.5); }
+.cta { transition: transform .12s ease, background-color .12s ease; }
+.cta:hover { transform: translateY(-3px); background-color: #092433; }
+.cta.small:hover { transform: translateY(-2px); }
+.cta:focus, .feature-card a:focus { outline:3px solid rgba(224,122,95,0.25); outline-offset:4px; }
+.feature-card a { display:block; color:inherit; text-decoration:none; }
+.feature-card a:hover h3 { text-decoration:underline; }
+.cta, .feature-card a { cursor:pointer; }
+
+/* subtle animation for images when hovered */
+.card img, .feature-card img { transition: transform .18s ease; }
+.card:hover img, .feature-card:hover img { transform: scale(1.03); }
