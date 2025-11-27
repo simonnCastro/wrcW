@@ -18,3 +18,13 @@ nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
 	.car-grid { justify-content:space-around; }
 	.card { width:260px; }
 }
+
+/* Stage-specific tweaks */
+.stage-grid { flex-wrap:wrap; }
+.stage-grid .card { width:260px; }
+.stage-grid .card img { height:140px; }
+
+/* Hero image */
+.hero-inner { max-width:1000px; margin:0 auto; padding:40px 20px; }
+.hero-inner figure { margin:0 0 20px; }
+.hero-inner img { width:100%; height:auto; border-radius:8px; display:block; }
